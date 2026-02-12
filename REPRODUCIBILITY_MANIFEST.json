@@ -1,7 +1,7 @@
 {
   "paper_v1_precision_opt": {
-    "core_release": "v0.1.0",
-    "core_config_hash": "",
+    "core_release": "v1.0.0",
+    "core_config_hash": "52d2c661debdd8f6f3adc76495373a13ad823b63c55a0e7854fc261cc76675b0",
     "data_snapshot_hash": "",
     "expected_metrics": {
       "greedy": {
@@ -24,8 +24,8 @@
     "expected_alerts_hash": ""
   },
   "paper_v1_high_sensitivity": {
-    "core_release": "v0.1.0",
-    "core_config_hash": "",
+    "core_release": "v1.0.0",
+    "core_config_hash": "0aab8d4afdf58a912a022639d543f21baee49f608b1adcd7fbd5daab0b45166e",
     "data_snapshot_hash": "",
     "expected_metrics": {
       "greedy": {
