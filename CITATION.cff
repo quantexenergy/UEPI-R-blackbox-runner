@@ -4,16 +4,16 @@ title: "UEPI-R: An Unsupervised Early-Warning System for Solar Flares Using GOES
 type: software
 authors:
   - family-names: Castillo
-    given-names: Alex
+    given-names: Jorge Alexander
     affiliation: Quantex Energy
 license: MIT
-repository-code: "https://github.com/alexcastillo/UEPI-R-blackbox-runner"
+repository-code: "https://github.com/quantexenergy/UEPI-R-blackbox-runner"
 preferred-citation:
   type: article
   title: "UEPI-R: An Unsupervised Early-Warning System for M- and X-Class Solar Flares Using Real-Time GOES XRS Data"
   authors:
     - family-names: Castillo
-      given-names: Alex
+      given-names: Jorge Alexander
       affiliation: Quantex Energy
   year: 2026
   journal: "arXiv preprint"

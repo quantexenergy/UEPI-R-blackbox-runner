@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
-    {name = "Alex Castillo", email = "alex@quantexenergy.com"},
+    {name = "Jorge Alexander Castillo", email = "alex@quantexenergy.com"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -41,7 +41,7 @@ dev = [
 uepi-runner = "uepi_runner.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/alexcastillo/UEPI-R-blackbox-runner"
+Homepage = "https://github.com/quantexenergy/UEPI-R-blackbox-runner"
 Paper = "https://arxiv.org/abs/XXXX.XXXXX"
 
 [tool.setuptools.packages.find]

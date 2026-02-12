@@ -4,7 +4,7 @@ Independently verify the results reported in:
 
 > **UEPI-R: An Unsupervised Early-Warning System for M- and X-Class Solar Flares
 > Using Real-Time GOES XRS Data**
-> Alex Castillo (Quantex Energy), 2026
+> Jorge Alexander Castillo (Quantex Energy), 2026
 
 ## What This Repo Does
 
