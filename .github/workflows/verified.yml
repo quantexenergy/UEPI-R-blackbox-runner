@@ -1,0 +1,52 @@
+name: Verified Reproduction
+
+on:
+  workflow_dispatch:
+    inputs:
+      config_id:
+        description: "Config ID to reproduce"
+        default: "paper_v1_precision_opt"
+        required: true
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install runner
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+
+      - name: Install verified core
+        env:
+          GH_TOKEN: ${{ secrets.CORE_WHEEL_TOKEN }}
+          UEPI_CORE_RELEASE: ${{ secrets.CORE_RELEASE_TAG || 'latest' }}
+        run: python scripts/install_core.py
+
+      - name: Verify core loaded
+        run: |
+          python -c "
+          import uepi_core
+          print(f'Core: {uepi_core.version()}')
+          print(f'Config hash: {uepi_core.config_hash(\"${{ inputs.config_id }}\")}')
+          "
+
+      - name: Run reproduction
+        run: |
+          python -m uepi_runner.cli reproduce-paper \
+            --config-id "${{ inputs.config_id }}"
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproduction-outputs
+          path: outputs/

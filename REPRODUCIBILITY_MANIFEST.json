@@ -1,0 +1,42 @@
+{
+  "paper_v1_precision_opt": {
+    "core_release": "v0.1.0",
+    "core_config_hash": "",
+    "data_snapshot_hash": "",
+    "expected_metrics": {
+      "greedy": {
+        "mx_coverage_pct": 63.9,
+        "x_coverage_pct": 97.2,
+        "precision_pct": 39.6,
+        "false_per_day": 0.36,
+        "median_lead_min": 257.0,
+        "mean_lead_min": 375.0
+      },
+      "overlap": {
+        "mx_coverage_pct": 71.0,
+        "x_coverage_pct": 97.2,
+        "precision_pct": 39.1,
+        "false_per_day": 0.39,
+        "median_lead_min": 146.0,
+        "mean_lead_min": 178.0
+      }
+    },
+    "expected_alerts_hash": ""
+  },
+  "paper_v1_high_sensitivity": {
+    "core_release": "v0.1.0",
+    "core_config_hash": "",
+    "data_snapshot_hash": "",
+    "expected_metrics": {
+      "greedy": {
+        "mx_coverage_pct": 78.2,
+        "x_coverage_pct": 98.6,
+        "precision_pct": 18.5,
+        "false_per_day": 1.34,
+        "median_lead_min": 198.0,
+        "mean_lead_min": 313.0
+      }
+    },
+    "expected_alerts_hash": ""
+  }
+}

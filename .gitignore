@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Data (downloaded at runtime)
+data/*.nc
+data/*.csv
+data/*.json
+!data/.gitkeep
+
+# Outputs (generated during reproduction)
+outputs/*.csv
+outputs/*.png
+outputs/*.pdf
+outputs/*.json
+!outputs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
