@@ -10,7 +10,7 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
-    {name = "Jorge Alexander Castillo", email = "alex@quantexenergy.com"},
+    {name = "Jorge Alexander Castillo", email = "jcastillo@quantex-energy.com"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

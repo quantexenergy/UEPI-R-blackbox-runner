@@ -12,7 +12,7 @@ If you discover a security vulnerability in this project, please report it
 responsibly:
 
 1. **Do not** open a public GitHub issue.
-2. Email: alex@quantexenergy.com
+2. Email: jcastillo@quantex-energy.com
 3. Include a description of the vulnerability and steps to reproduce.
 4. You will receive a response within 72 hours.
 
